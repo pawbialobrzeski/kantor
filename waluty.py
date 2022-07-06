@@ -139,41 +139,41 @@ class Kantor(object):
     def przeliczRUB(self):
         c = self.sprawdz_kwote()
         self.wyjscieRUB.delete(0.0, END)
-        self.wyjscieRUB.insert(0.0, str(round(c/0.08 , 4)))
+        self.wyjscieRUB.insert(0.0, str(round(c/0.08 , 2)))
 
     def przeliczCZK(self):
         c = self.sprawdz_kwote()
         self.wyjscieCZK.delete(0.0, END)
-        self.wyjscieCZK.insert(0.0, str(round(c/0.19 , 4)))
+        self.wyjscieCZK.insert(0.0, str(round(c/0.19 , 2)))
 
     def przeliczJPY(self):
         c = self.sprawdz_kwote()
         self.wyjscieJPY.delete(0.0, END)
-        self.wyjscieJPY.insert(0.0, str(round(c/0.034 , 4)))
+        self.wyjscieJPY.insert(0.0, str(round(c/0.034 , 2)))
 
     def przeliczUAH(self):
         c = self.sprawdz_kwote()
         self.wyjscieUAH.delete(0.0, END)
-        self.wyjscieUAH.insert(0.0, str(round(c/0.15 , 4)))
+        self.wyjscieUAH.insert(0.0, str(round(c/0.15 , 2)))
 
     def przeliczCHF(self):
         c = self.sprawdz_kwote()
         self.wyjscieCHF.delete(0.0, END)
-        self.wyjscieCHF.insert(0.0, str(round(c/4.61 , 4)))
+        self.wyjscieCHF.insert(0.0, str(round(c/4.61 , 2)))
 
     def przeliczEUR(self):
         c = self.sprawdz_kwote()
         self.wyjscieEUR.delete(0.0, END)
-        self.wyjscieEUR.insert(0.0, str(round(c/4.7, 4)))
+        self.wyjscieEUR.insert(0.0, str(round(c/4.7, 2)))
 
     def przeliczUSD(self):
         c = self.sprawdz_kwote()
         self.wyjscieUSD.delete(0.0, END)
-        self.wyjscieUSD.insert(0.0, str(round(c/4.52, 4)))
+        self.wyjscieUSD.insert(0.0, str(round(c/4.52, 2)))
 
     def przeliczGBP(self):
         c = self.sprawdz_kwote()
         self.wyjscieGBP.delete(0.0, END)
-        self.wyjscieGBP.insert(0.0, str(round(c/5.49, 4)))
+        self.wyjscieGBP.insert(0.0, str(round(c/5.49, 2)))
 
 k = Kantor()
